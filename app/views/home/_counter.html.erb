@@ -1,0 +1,7 @@
+<%= tag.div(class: 'counter', data: { controller: 'counter-controller' }) do %>
+  <h3><%= display_title(title) %></h3>
+  <p>Current value: <%= tag.span(class: 'value', data: { "counter-controller-target": 'counter' })%></p>
+  <%= tag.button(data: { action: "click->counter-controller#click"}) do %>
+    click me!
+  <% end %>
+<% end %>
