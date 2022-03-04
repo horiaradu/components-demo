@@ -1,0 +1,10 @@
+<ul>
+  <% [{vote: 'yes', count: 80}, {vote: 'no', count: 30}, {vote: 'abstained', count: 3}].each do |v| %>
+    <li>
+      <div class="counter">
+        <span><%= v[:vote] %></span>
+        <span class="value"><%= v[:count] %></span>
+      </div>
+    </li>
+  <% end %>
+</ul>

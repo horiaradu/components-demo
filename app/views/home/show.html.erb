@@ -4,3 +4,14 @@
 <%= render 'counter', title: 'Counter 2' %>
 <%= render Counter::Component.new(title: 'Counter 3') %>
 <%= render Counter::Component.new(title: 'Counter 4') %>
+
+<!--uncomment for involuntary reuse of css-->
+<%#= render 'votes' %>
+
+<!--uncomment for css overwrite-->
+<!--<p class="value">This is an underlined text</p>-->
+
+<!--uncomment for customisation-->
+<!--<div class="overwrite">-->
+  <%#= render 'counter', title: 'Counter 2' %>
+<!--</div>-->
