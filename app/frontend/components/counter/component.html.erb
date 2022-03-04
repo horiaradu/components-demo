@@ -1,0 +1,7 @@
+<%= tag.div(class: class_for('counter'), data: { controller: identifier }) do %>
+  <h3><%= display_title %></h3>
+  <p>Current value: <%= tag.span(class: class_for('value'), data: { "#{identifier}-target": 'counter' })%></p>
+  <%= tag.button(data: { action: "click->#{identifier}#click"}) do %>
+    click me!
+  <% end %>
+<% end %>

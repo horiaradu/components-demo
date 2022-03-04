@@ -75,4 +75,5 @@ group :test do
 end
 
 gem "view_component"
+gem 'dry-initializer'
 gem "view_component-contrib"
